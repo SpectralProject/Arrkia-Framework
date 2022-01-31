@@ -1,2 +1,7 @@
 Qt-designer like IDE with `code` and `design` menus only
 Built using vulkan and images/animations directly
+
+## What Arrkia is not
+- a low level / systems framework. No pointers and bit manipulation though references do exist. If you would want something like pointers, best to link with an external library in c/rust, etc.
+- a general purpose framework. It is a DSL meant to build apps, kind of like if react.js was a language. Im not going to make a language that tries to do everything and ends up doing nothing right.
+- a scripting framework. There is an interpreter and JIT compiler for rei, but if you want to run scripts better off using python or the shell. If you want to incorporate scripting features, rei is designed to interact well with the shell.
