@@ -2,6 +2,7 @@
 Rei SDK and tools to create native GUI apps on QuantOS
 Inspired by React components and React TSX. Components inspired by Chakra UI and Framer Motion
 Syntax is scala-like and modules is based on sbt
+- Built entirely in rei and compiles to phantasm via `reic` as usual. Uses `prei` and extra `arrkia` config formats compatible with the prei-arrkia package. 
 
 ## Features
 - no semicolons, statements end in a newline character "\n" which is rendered as a newline in most text editors
