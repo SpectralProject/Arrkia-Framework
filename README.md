@@ -1,5 +1,5 @@
 # Arrkia
-Rei SDK and tools to create native GUI apps on QuantOS
+Rei SDK and tools to create native GUI apps on Quanta
 Inspired by React components and React TSX. Components inspired by Chakra UI and Framer Motion
 Syntax is scala-like and modules is based on sbt
 - Built entirely in rei and compiles to phantasm via `reic` as usual. Uses `prei` and extra `arrkia` config formats compatible with the prei-arrkia package. 
@@ -52,7 +52,7 @@ src/
             users.db #mongodb
 package.toml #specify dependencies for your final product and build dependencies, install packages with `arrkia i <package_name>` from arrkia.io
 package.lock #locks your depenencies. Will not update your deps until you run `arrkia deps update`
-config.rei #configuration options to edit your project name and useful scripts. `arrkia run` will build and run your app in hot-reload mode. `arrkia build --release` will build your app in `build/<name>.app` for QuantOS.
+config.rei #configuration options to edit your project name and useful scripts. `arrkia run` will build and run your app in hot-reload mode. `arrkia build --release` will build your app in `build/<name>.app` for Quanta.
 build.rei #use build dependencies and hook onto first and second stage of build process to insert scripts in rei
 ```
 Note the users.db is for storing user data. Uses a key-value store based on mongodb. You can use your own DB by editing `config.rei`.

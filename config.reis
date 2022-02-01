@@ -2,7 +2,7 @@
 package_name = 'Arrkia'
 author = 'Jason Qin'
 license = 'BSD-3'
-description = 'A rei based library for making fast and beautiful GUI apps, made for QuantOS'
+description = 'A rei based library for making fast and beautiful GUI apps, made for Quanta'
 version = '0.1.0'
 # when published to rei.io, will fall under <github username>/<package name>
 
