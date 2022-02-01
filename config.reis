@@ -1,0 +1,32 @@
+# specify your details and the package details
+package_name = 'Arrkia'
+author = 'Jason Qin'
+license = 'BSD-3'
+description = 'A rei based library for making fast and beautiful GUI apps, made for QuantOS'
+version = '0.1.0'
+# when published to rei.io, will fall under <github username>/<package name>
+
+# Any extra config like environment variables
+# note export_env is a function that takes a single param. When no braces are given, the parse tree
+# understands its saying export_env('CC = gcc')
+export_env 'CC = gcc'
+export_env 'LD = ld'
+export_env 'REICPATH = /bin/reic'
+
+# specify any alias commands
+export_alias 'b = build'
+
+# specify any extra features you want to use from prei and reic
+features += auto_linting, extended_build_ops, auto_publish
+
+#*
+    What is Rei Script? Basically rei but uses interpreter (Irei) to run
+    The interpreter is like cpython but also runs in the console. Allows easy interfacing with the OS
+    But uses prei as a middleman so you dont directly have to deal with the OS and potentially screw something up
+
+    PHILOSOPHY -> take up as much space as you need to guarentee safety and speed. Destroy the temporary files when possible, e.g. when shutting down.
+    Makes use of the large SSD space and RAM space effectively
+
+    IRei -> an interpreter based program that interprets rei code line by line. To signify that a specific rei file should be interpreted, use the .reis extension
+    IRei is also used in Rein, a jupyer notebook like extension for Forgerei.
+*#

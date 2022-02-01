@@ -1,0 +1,25 @@
+# Build dependencies and scripts
+# .reis -> rei script
+
+# Before building, update deps from rei.io
+# If you want to freeze your deps, dont include this or set deps.update(patch|minor) to only download patches and minor updates
+# .update() defaults to .update(major) which provides you the latest updates 
+deps.update()
+
+# Compile Arrkia as a static library, importable in rei/prei when you create an arrkia proj or specify 'deps += arrkia' which defaults to rei.io
+# Added a workspace in src/. By default prei generates a single workspace in src/ and builds an executable. This time we're building a library
+lib += {dir: "src", name: "arrkia-core"}
+
+# Goes to rei.io and finds the arrkius library and downloads/links to your prei project workspaces
+deps += arrkius
+
+# specify any compilation / linking options
+compile.release.optimisation = ['low' | 'standard' | 'high']
+deps.link = ['static' | 'dynamic']
+
+#*
+ Multiline comment
+*#
+# test your build each time you build. Automatically tests your unit and integration tests
+# if you only want to do unit tests, do .test(unit). For only integration, .test(integration)
+build.test()

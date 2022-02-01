@@ -1,0 +1,8 @@
+# Rei generated dirs and files
+build/
+archive/
+
+# IDE
+.forgerei
+.vscode
+.idea

@@ -146,6 +146,5 @@ Main() = {
 
 ```
 
-## Arrkia Creator
-A QtCreator like IDE for Arrkia. Built using iced-rs.
-
+## Forgerei (+Arrkia Creator Extension)
+Forgerei with the Arrkia Extension is a a QtCreator like IDE for Arrkia programming. Built using iced-rs.

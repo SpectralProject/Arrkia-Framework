@@ -1,0 +1,15 @@
+# directives
+@import "../assets/arrkia.gif" as Arrkia.Logo
+@import "../assets/arrkia.ttf" as Arrkia.Font
+
+<Box font=$Arrkia.Font>
+    <Flex flexDir="row">
+        <Box>
+            <Arrkia.Logo/>
+        </Box>
+    </Flex>
+
+    <Flex flexDir="row">
+
+    </Flex>
+<Box>

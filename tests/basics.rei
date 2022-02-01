@@ -3,5 +3,7 @@
 
 @test
 test_basics() = {
-    
+    # FMLTree() -> stack allocation
+    # new FMLTree() -> heap allocation
+    var fml_tree = FMLTree()
 }
